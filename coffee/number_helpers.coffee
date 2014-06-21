@@ -138,22 +138,22 @@ class @NumberHelpers
     abs_float = Math.abs(float)
 
     # Less than Thousand does not need text or a insignifiant digits
-    if abs_float < Math.pow(10, 3)
+    if Math.pow(10, 3) > abs_float
       denom = 1
       label = false
-    else if abs_float >= Math.pow(10, 3) and abs_float < Math.pow(10, 6)
+    else if Math.pow(10, 3) <= abs_float < Math.pow(10, 6)
       denom = Math.pow(10, 3)
       label = 'Thousand'
-    else if abs_float >= Math.pow(10, 6) and abs_float < Math.pow(10, 9)
+    else if Math.pow(10, 6) <= abs_float < Math.pow(10, 9)
       denom = Math.pow(10, 6)
       label = 'Million'
-    else if abs_float >= Math.pow(10, 9) and abs_float < Math.pow(10, 12)
+    else if Math.pow(10, 9) <= abs_float < Math.pow(10, 12)
       denom = Math.pow(10, 9)
       label = 'Billion'
-    else if abs_float >= Math.pow(10, 12) and abs_float < Math.pow(10, 15)
+    else if Math.pow(10, 12) <= abs_float < Math.pow(10, 15)
       denom = Math.pow(10, 12)
       label = 'Trillion'
-    else if abs_float >= Math.pow(10, 15)
+    else if Math.pow(10, 15) <= abs_float
       denom = Math.pow(10, 15)
       label = 'Quadrillion'
 
@@ -190,19 +190,19 @@ class @NumberHelpers
     abs_float = Math.abs(float)
 
     # Less than Thousand does not need text or a insignifiant digits
-    if abs_float < Math.pow(10, 3)
+    if Math.pow(10, 3) > abs_float
       denom = 1
       label = 'Bytes'
-    else if abs_float >= Math.pow(10, 3) and abs_float < Math.pow(10, 6)
+    else if Math.pow(10, 3) <= abs_float < Math.pow(10, 6)
       denom = Math.pow(10, 3)
       label = 'KB'
-    else if abs_float >= Math.pow(10, 6) and abs_float < Math.pow(10, 9)
+    else if Math.pow(10, 6) <= abs_float < Math.pow(10, 9)
       denom = Math.pow(10, 6)
       label = 'MB'
-    else if abs_float >= Math.pow(10, 9) and abs_float < Math.pow(10, 12)
+    else if Math.pow(10, 9) <= abs_float < Math.pow(10, 12)
       denom = Math.pow(10, 9)
       label = 'GB'
-    else if abs_float >= Math.pow(10, 12) and abs_float < Math.pow(10, 15)
+    else if Math.pow(10, 12) <= abs_float < Math.pow(10, 15)
       denom = Math.pow(10, 12)
       label = 'TB'
 
