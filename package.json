@@ -1,0 +1,22 @@
+{
+  "name": "number-helpers-coffeescript",
+  "version": "0.1.0",
+  "description": "Number formatting borrowed from Rails NumberHelper",
+  "main": "coffee/number_helpers.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gscottolson/number-helpers-coffeescript.git"
+  },
+  "keywords": [
+    "formatting"
+  ],
+  "author": "Emcien",
+  "license": "LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/gscottolson/number-helpers-coffeescript/issues"
+  },
+  "homepage": "https://github.com/gscottolson/number-helpers-coffeescript"
+}
